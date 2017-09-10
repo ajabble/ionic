@@ -1,0 +1,27 @@
+<ion-content padding id="welcome">
+  <div>
+    <span style="color:#36A8E9; font-size:34px;">nerdapplabs</span><br>
+    <span style="color:#999999; font-style: italic; font-size:12px;">delivering solutions with performance</span>
+  </div>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button ion-button block color="primary" (click)="signin()">SIGN IN</button>
+<div>
+</div>
+<button ion-button block color="primary" (click)="signup()" clear>Don't have an account? Signup</button>
+<button ion-button block color="primary" (click)="forgotpassword()" clear>Forgot your password?</button>
+
+</ion-content>
