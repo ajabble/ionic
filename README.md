@@ -1,26 +1,44 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+#### ionic
 
-## How to use this template
+---------
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+> ionic3 based app using Angular4 TypeScript
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+> Basic splash, signin, signup, forgot password screens with tabs based template
 
-### With the Ionic CLI:
+#### Requirements
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+- npm
+- ionic3
+- cordova/phonegap
+- Xcode 8.0+
+- iOS 8.0+
+- Any Browser which supports HTML5
+- Text Editors (such as Atom, Sublime, vs code etc.)
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
 
-Then, to run it, cd into `myTabs` and run:
+#### With the Ionic CLI:
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+1. run `ionic serve` command and see output on Browser
+2. If you want to run output on iOS simulator
+   -  if any error related with platform, then do `cordova platform add ios --save`
+   - `ionic cordova run ios` => run on default iOS simuator
+   - `ionic cordova emulate --target="iPhone-SE, 10.3" --livereload ios` => run on specific simulator, if multiple
 
-Substitute ios for android if not on a Mac.
+#### Build iOS app
 
+1. cordova platform add ios --save
+2. cordova requirements ios
+3. ionic cordova build ios
+
+#### Build Android app
+
+1. cordova platform add android --save
+2. cordova requirements android
+3. cordova build android --verbose
+4. cordova run android
+
+
+#### TODO:
+* [ ] Client Validation
+* [ ] Add API and UI tests.
